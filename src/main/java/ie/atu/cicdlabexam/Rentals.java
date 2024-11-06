@@ -12,6 +12,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Rentals {
+    @Pattern()
     String rentalCode;
     String carModel;
     String renterName;
