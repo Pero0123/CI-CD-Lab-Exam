@@ -4,6 +4,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Service
 public class RentalsService {
@@ -13,7 +14,7 @@ public class RentalsService {
         return myList;
     }
 
-    public List<Rentals>getRental(Rentals rentals){
+    public List<Rentals>getRental(@RequestParam rentalCode){
         return myList;
     }
 
