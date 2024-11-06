@@ -1,5 +1,7 @@
 package ie.atu.cicdlabexam;
 
+import jakarta.validation.constraints.Future;
+import jakarta.validation.constraints.FutureOrPresent;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,8 +17,10 @@ public class Rentals {
     String renterName;
     String renterEmail;
     @DateTimeFormat
+    @FutureOrPresent
     String rentalStartDate;
     @DateTimeFormat
+    @Future
     String rentalEndDate;
     float dailyRate;
 }
